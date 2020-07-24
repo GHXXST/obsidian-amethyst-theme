@@ -1,3 +1,4 @@
+
 .theme-dark {
   --background-primary: #1E1E1E;
   --background-primary-alt: #161616;
@@ -59,8 +60,13 @@ span.cm-formatting-list {
   display: inline !important;
 }
 
-/*Eexcept tags */
+/* Except #tags */
 .cm-hashtag.cm-meta {
+  display: inline !important;
+}
+
+/* Except block quotes */
+.cm-quote {
   display: inline !important;
 }
 
@@ -707,4 +713,14 @@ ul ul::before {
 .outline .pane-clickable-item {
   font-family: "Inconsolata", monospace !important;
   font-size: 1em;
+  padding: 0.25em 5px;
+  line-height: 1.1em;
+}
+
+.outline-heading-children {
+  margin-left: 5px;
+}
+
+.workspace-leaf-content[data-type="outline"] .view-content {
+  background-color: #242424 !important;
 }
