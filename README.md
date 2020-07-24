@@ -7,9 +7,7 @@
   <br>
   <ol>
     <li>Enable the Custom CSS plug-in in Obsidian</li>
-    <li>Place obsidian.css in your Obsidian Vault directory.</li>
+    <li>Place obsidian.css in Obsidian Vault directory.</li>
   </ol>
 </p>
 <br>
-
-![Screenshot](/screenshots/obsidian-amethyst-theme-screenshot.jpg?raw=true "Screenshot")
