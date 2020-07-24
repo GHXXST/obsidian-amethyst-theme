@@ -12,4 +12,4 @@
 </p>
 <br>
 
-![Screenshot](/obsidian-amethyst-theme-screenshot.jpg?raw=true "Screenshot")
+![Screenshot](/screenshots/obsidian-amethyst-theme-screenshot.jpg?raw=true "Screenshot")
