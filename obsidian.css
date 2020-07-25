@@ -48,12 +48,11 @@
   --interactive-accent-hover: #d6ba7c;
 }
 
-/* Hide inline formatting if not active line */
+/* inline formatting, link targets and [[ ]] disappears if not active line*/
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting,
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-string.cm-url
-{
-  display: none;
-}
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-string.cm-url/*,
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-link*/
+{ display: none; }
 
 /* Except list markers */
 span.cm-formatting-list {
@@ -68,6 +67,14 @@ span.cm-formatting-list {
 /* Except block quotes */
 .cm-quote {
   display: inline !important;
+}
+
+.span.cm-formatting-code-block.cm-hmd-codeblock {
+  display: inline !important;
+}
+
+.span.cm-formatting-task { 
+  display: inline !important; font-family: monospace; 
 }
 
 .side-dock-ribbon-tab.is-active {
