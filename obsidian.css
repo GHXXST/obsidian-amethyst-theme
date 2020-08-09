@@ -50,7 +50,9 @@
 
 /* inline formatting, link targets and [[ ]] disappears if not active line*/
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting,
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-string.cm-url/*,
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-string.cm-url
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-math.cm-formatting-math-begin.cm-formatting-math.cm-formatting-math-end
+/*
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-link*/
 { display: none; }
 
@@ -69,6 +71,24 @@ span.cm-formatting-list {
   display: inline !important;
 }
 
+.cm-url {
+  display: inline !important;
+}
+
+.cm-formatting-link-string {
+    color: #575757 !important;
+    text-decoration: none !important;
+}
+
+.cm-math { 
+  color: #70ac8a !important;
+}
+
+.cm-formatting-math.cm-formatting-math-begin, .cm-formatting-math.cm-formatting-math-end {
+  color: #c46a5b !important;
+}
+
+
 .span.cm-formatting-code-block.cm-hmd-codeblock {
   display: inline !important;
 }
@@ -80,6 +100,14 @@ span.cm-formatting-list {
 .side-dock-ribbon-tab.is-active {
   background-color: var(--background-secondary);
   color: var(--nav-highlight);
+}
+
+/* Draw line between Outline items */
+.outline .pane-clickable-item {
+  border-bottom: 1px solid #3c3b3a;
+  margin: 0 0.3em 0 0;
+  padding: 0.4em !important;
+  line-height: 1.1em !important;
 }
 
 /* Text color for highlighted/marked */
@@ -350,6 +378,10 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
   font-weight: 400;
 }
 
+.workspace-leaf .view-header-title .selected {  
+  background-color: #474747 !important;
+}
+
 /* Status bar */
 .status-bar {
   font-family: "Inconsolata", monospace !important;
@@ -382,43 +414,43 @@ div.markdown-preview-view {
 /* Change styling of individual header levels */
 .cm-header-1 {
   line-height: 1.1em !important;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 600 !important;
   text-decoration: none !important;
-  color: #c9c3be;
+  color: #6C7CFE;
 }
 
 .cm-header-2 {
   line-height: 1.1em !important;
-  font-size: 1.3em;
-  font-weight: 600 !important;
+  font-size: 1.7em;
+  font-weight: 200 !important;
   text-decoration: none !important;
-  color: #868687;
+  color: #7176A4;
 }
 
 .cm-header-3 {
   line-height: 1.1em !important;
-  font-size: 1.3em;
-  font-weight: 400 !important;
-  text-decoration: none !important;
-  color: #c9c3be;
+  font-size: 1.4em;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  color: #6C7CFE;
 }
 
 .cm-header-4 {
   line-height: 1.1em !important;
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: 400 !important;
-  font-style: italic;
-  text-decoration: none !important;
-  color: #868687;
+  text-decoration: underline !important;
+  color: #7176A4;
 }
 
 .cm-header-5 {
   line-height: 1.1em !important;
   font-size: 1.2em;
-  font-weight: 400 !important;
+  font-weight: 600 !important;
+  font-style: italic;
   text-decoration: underline !important;
-  color: #c9c3be;
+  color: #6C7CFE;
 }
 
 .cm-header-6 {
@@ -427,7 +459,7 @@ div.markdown-preview-view {
   font-weight: 00 !important;
   text-decoration: none !important;
   text-transform: uppercase;
-  color: #868687;
+  color: #7176A4;
 }
 
 /* Change formatting for header display text */
@@ -458,34 +490,44 @@ div.markdown-preview-view {
 }
 
 /* Bullet point relationship lines */
+/*
 .cm-hmd-list-indent .cm-tab, ul ul { 
   position: relative;
   left: 0.1em;
 }
+*/
 
+/*
 .cm-hmd-list-indent .cm-tab::before, ul ul::before {
   content:'';
   border-left: 1px solid #2c2c2c;
   position: absolute;
 }
+*/
 
+/*
 .cm-hmd-list-indent .cm-tab::before { 
   left: 50; 
   top: -5px; 
   bottom: -5px; 
 }
+*/
 
+/*
 ul ul::before { 
   left: -11px; 
   top: 0; 
   bottom: 0; 
 } 
+*/
 
 /*Bullet list padding*/
 /*
 .HyperMD-list-line {
+  padding-left: 1.5em !important; 
 }
 */
+
 
 /* Block cursor */
 .CodeMirror-cursor { 
@@ -613,6 +655,10 @@ ul ul::before {
   font-size: 1em !important;
   color: #c46a5b !important;
 }
+.cm-strong {
+  color: #F4579C !important;
+  font-weight: 900 !important;
+}
 
 /* Change markdown tags for italic */
 .cm-formatting-em {
@@ -620,6 +666,16 @@ ul ul::before {
   font-size: 1em !important;
   color: #c46a5b !important;
 }
+
+.cm-em {
+  color: #F4E095 !important;
+}
+
+.cm-formatting.cm-formatting-link:nth-child(4), .cm-link {
+  padding-right: 0.3em !important;
+  font-weight: 900;
+}
+
 
 /* Change markdown tags for strikethrough */
 .cm-formatting-strikethrough {
