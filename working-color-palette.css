@@ -1,0 +1,51 @@
+
+# Color palette – sort of based on Gruvbox
+
+#c7d2ce  #a9c899  #b3a0aa  #edecec  #c9c3be  #dad4bb  
+#b0c3ca  #70ac8a  #6c504c  #d4d3cc  #747368  #dcad5d
+#6fafc1  #92a662  #c46a5b  #868687  #534e47  #6b5135
+#5981b1  #546f68  #72352f  #3c3b3a  #342f2e  #2d251c
+#3e516d  #3c4f54  #302c2c  #2c2c2c  #2c2c24  
+#2e3a50  #313c3e  #2c2424  #242424           #575757
+#252d41  #2b3434  #291c1c  #121212
+#272834  #1c1c1c           #171717
+#1c1c1c                    #111111
+#6C7CFE  #99A4FE  #17D1CF  #111111  #5ECAFE  #6CC5FE
+
+#feb06c  #dcad5d
+
+
+# Obsidian.md colors from website
+
+  --background-primary: #202020;
+  --background-primary-alt: #1a1a1a;
+  --background-secondary: #161616;
+  --background-secondary-alt: #000000;
+  --background-modifier-border: #333;
+  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #197300;
+  --background-modifier-error: #3d0000;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+  --text-accent: #7f6df2;
+  --text-accent-hover: #8875ff;
+  --text-normal: #dcddde;
+  --text-muted: #999;
+  --text-faint: #666;
+  --text-error: #ff3333;
+  --text-error-hover: #990000;
+  --text-highlight-bg: rgba(255, 255, 0, 0.4);
+  --text-selection: rgba(23, 48, 77, 0.99);
+  --text-on-accent: #dcddde;
+  --interactive-normal: #2a2a2a;
+  --interactive-hover: #303030;
+  --interactive-accent: #483699;
+  --interactive-accent-rgb: 72, 54, 153;
+  --interactive-accent-hover: #4d3ca6;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+
