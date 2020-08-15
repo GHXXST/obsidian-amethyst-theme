@@ -11,3 +11,14 @@
   </ol>
 </p>
 <br>
+
+<p>
+  <b>TO DO:</b>
+  <ul>
+    <li>Properly comment everything</li>
+    <li>Alphabetize classes/properties in sub-sections</li>
+    <li>Remove redundant classes/properties</li>
+    <li>Convert colors and appropriate properties to defined variables.</li>
+  </ul>
+</p>
+<br>
