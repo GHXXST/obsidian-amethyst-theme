@@ -99,7 +99,7 @@ span.cm-formatting-list {
   font-family: "Inconsolata", monospace !important;
 }
 
-.span.cm-formatting-task { 
+.cm-formatting-task {
   display: inline !important; 
   font-family: "Inconsolata", monospace !important; 
 }
@@ -118,7 +118,7 @@ span.cm-formatting-list {
 }
 
 /* Text color for highlighted/marked */
-.cm-highlight {
+mark, .cm-highlight {
   font-family: "Inconsolata", monospace !important;
   display: inline-block;
   font-weight: 400;
@@ -422,10 +422,6 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
   font-weight: 400;
 }
 
-.workspace-leaf .view-header-title .selected {  
-  background-color: #474747 !important;
-}
-
 /* Status bar */
 .status-bar {
   font-family: "Inconsolata", monospace !important;
@@ -442,9 +438,9 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 }
 
 /* Font for the markdown preview panel */
-div.markdown-preview-view {
+.markdown-preview-view {
   font-family: "Inconsolata", monospace !important;
-  font-size: 1em !important;
+  font-size: 1.1em !important;
 }
 
 /* Enable wrapping of code blocks in the preview panel */
@@ -456,59 +452,58 @@ div.markdown-preview-view {
 
 
 /* Change styling of individual header levels */
-.cm-header-1 {
+h1, .cm-header-1 {
   line-height: 1.1em !important;
-  font-size: 1.7em;
+  font-size: 1.7em !important;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+  color: #6C7CFE !important;
+}
+
+h2, .cm-header-2 {
+  line-height: 1.1em !important;
+  font-size: 1.3em !important;
   font-weight: 600 !important;
   text-decoration: none !important;
-  color: #6C7CFE;
+  color: #d4d3cc !important;
 }
 
-.cm-header-2 {
+h3, .cm-header-3 {
   line-height: 1.1em !important;
-  font-size: 1.4em;
-  font-weight: 200 !important;
-  text-decoration: none !important;
-  color: #7176A4;
-}
-
-.cm-header-3 {
-  line-height: 1.1em !important;
-  font-size: 1.4em;
+  font-size: 1.1em !important;
   font-weight: 600 !important;
   text-decoration: underline !important;
-  color: #6C7CFE;
+  color: #6C7CFE !important;
 }
 
-.cm-header-4 {
+h4, .cm-header-4 {
   line-height: 1.1em !important;
-  font-size: 1.4em;
+  font-size: 1.1em !important;
   font-weight: 400 !important;
   text-decoration: underline !important;
-  color: #7176A4;
+  color: #d4d3cc !important;
 }
 
-.cm-header-5 {
+h5, .cm-header-5 {
   line-height: 1.1em !important;
-  font-size: 1.2em;
+  font-size: 1em !important;
   font-weight: 600 !important;
-  font-style: italic;
+  font-style: italic !important;
   text-decoration: underline !important;
-  color: #6C7CFE;
+  color: #6C7CFE !important;
 }
 
-.cm-header-6 {
+h6, .cm-header-6 {
   line-height: 1.1em !important;
-  font-size: 1.2em;
-  font-weight: 00 !important;
+  font-size: 1em !important;
+  font-weight: 600 !important;
   text-decoration: none !important;
-  text-transform: uppercase;
-  color: #7176A4;
+  text-transform: uppercase !important;
+  color: #6C7CFE !important;
 }
 
 /* Change formatting for header display text */
 .HyperMD-header {
-  font-style: none;
   padding-top: 5px !important;
   padding-bottom: 10px !important;
 }
@@ -519,7 +514,7 @@ div.markdown-preview-view {
 /*  font-weight: normal !important; */
   font-family: "Inconsolata", monospace !important;
   text-decoration: none !important;
-  color: #c46a5b;
+  color: #c46a5b !important;
 /*  font-size: 0.8em; */
   font-style: none !important;
 /*  position: absolute; */
@@ -532,7 +527,20 @@ div.markdown-preview-view {
   color: #6C7CFE;
   font-size: 0.85em;
   font-weight: 500;
-  font-family: "Inconsolata", monospace !important;;
+}
+
+ ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #6C7CFE;
+  font-size: 1.4em;
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 /* Bullet point relationship lines */
@@ -584,7 +592,7 @@ ul ul::before {
 
 /* Editor view - task list, color and vertical align */
 .cm-s-obsidian span.cm-formatting-task {
-  color: #6C7CFE;
+  color: #6C7CFE !important;
   font-size: 0.85em;
   font-weight: 400;
   letter-spacing: 1px;
@@ -678,15 +686,16 @@ ul ul::before {
 /* Change link style */
 .cm-link.cm-hmd-barelink,
 .cm-tag.cm-bracket.cm-hmd-html-begin,
-.cm-tag {
+.cm-tag, .HyperMD-list  {
   font-family: "Inconsolata", monospace !important;
   color: #feb06c !important;
   text-decoration: underline !important;
 }
 
-.cm-link {
+.internal-link, .cm-link {
   font-family: "Inconsolata", monospace !important;
   color: #23A3EC !important;
+  font-weight: 900 !important;
   text-decoration: underline !important;
 }
 
@@ -700,6 +709,8 @@ ul ul::before {
   font-family: "Inconsolata", monospace !important;
   background-color: rgba(0, 0, 0, 0);
   bottom: 0px;
+  font-size: 0.9em;
+  background-color: rgba(0,0,0,0.3) !important;
 }
 
 /* Change markdown tags for bold */
@@ -709,9 +720,9 @@ ul ul::before {
   font-size: 1em !important;
   color: #c46a5b !important;
 }
-.cm-strong {
+strong, .cm-strong {
   font-family: "Inconsolata", monospace !important;
-  color: #F4579C !important;
+  color: #99A4FE !important;
   font-weight: 900 !important;
 }
 
@@ -723,9 +734,9 @@ ul ul::before {
   color: #c46a5b !important;
 }
 
-.cm-em {
+em, .cm-em {
   font-family: "Inconsolata", monospace !important;
-  color: #F4E095 !important;
+  color: #17D1CF !important;
 }
 
 .cm-formatting.cm-formatting-link:nth-child(4), .cm-link {
@@ -744,7 +755,7 @@ ul ul::before {
 }
 
 /* Change text style for strikethrough */
-.cm-strikethrough {
+s, .cm-strikethrough {
   font-family: "Inconsolata", monospace !important;
   font-wieght: 400 !important;
   font-size: 1em !important;
