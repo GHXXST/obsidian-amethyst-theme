@@ -509,9 +509,26 @@ h6, .cm-header-6 {
 
 /* Change formatting for header display text */
 .HyperMD-header {
-  padding-top: 5px !important;
-  padding-bottom: 10px !important;
+  padding-top: 1em !important;
+  padding-bottom: 0.6em !important;
 }
+
+.markdown-preview-section > h1 {
+  padding-top: 1em !important;
+  padding-bottom: 0.6em !important;
+}
+
+.markdown-preview-section > h2, h3, h4, h5, h6 {
+  padding-top: 0.7em !important;
+  padding-bottom: 0em !important;
+  margin-bottom: -0.4em !important;
+}
+
+.markdown-preview-section ul, ol {
+  padding-left: 2em !important;
+}
+
+
 
 /* Changing size/color of the header hashtags ## */
 
