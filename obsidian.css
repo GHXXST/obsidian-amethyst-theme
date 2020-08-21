@@ -111,10 +111,15 @@ span.cm-formatting-list {
 
 /* Draw line between Outline items */
 .outline .pane-clickable-item {
-  border-bottom: 1px solid #3c3b3a;
-  margin: 0 0.3em 0 0;
-  padding: 0.4em !important;
+  margin: 0 0 0.1em 0.1em !important;
   line-height: 1.1em !important;
+}
+
+.outline > div > div:nth-child(1) {
+  margin: 0 0.3em 0.7em 0.9em !important;
+  line-height: 1.1em !important;
+  font-weight: 600 !important;
+  color: #868687 !important;
 }
 
 /* Text color for highlighted/marked */
@@ -850,13 +855,17 @@ s, .cm-strikethrough {
 .outline .pane-clickable-item {
   font-family: "Inconsolata", monospace !important;
   font-size: 1em;
+  margin: 0 0 0.1em 0.1em !important;
   padding: 0.25em 5px;
   line-height: 1.1em;
 }
 
 .outline-heading-children {
-  margin-left: 5px;
+  margin-left: 0.8em;
 }
+
+
+
 
 .workspace-leaf-content[data-type="outline"].view-content {
   background-color: #242424 !important;
