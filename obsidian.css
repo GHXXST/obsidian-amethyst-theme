@@ -519,16 +519,18 @@ h6, .cm-header-6 {
 }
 
 .markdown-preview-section > h2, h3, h4, h5, h6 {
-  padding-top: 0.7em !important;
+  padding-top: 0.8em !important;
   padding-bottom: 0em !important;
-  margin-bottom: -0.4em !important;
+  margin-bottom: -0.3em !important;
 }
 
 .markdown-preview-section ul, ol {
-  padding-left: 2em !important;
+  padding-left: 2.1em !important;
 }
 
-
+.markdown-preview-section .internal-link {
+  color: #6C7CFE !important;
+}
 
 /* Changing size/color of the header hashtags ## */
 
@@ -900,4 +902,15 @@ s, .cm-strikethrough {
 
 .cm-link {
   display: inline !important;
+}
+
+
+.markdown-preview-section .external-link {
+  color: #23A3EC;
+  text-decoration: none !important;
+}
+
+
+.markdown-preview-section {
+  line-height: 1.3em;
 }
