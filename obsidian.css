@@ -695,8 +695,7 @@ ul ul::before {
 .internal-link, .cm-link {
   font-family: "Inconsolata", monospace !important;
   color: #23A3EC !important;
-  font-weight: 900 !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;
 }
 
 .cm-formatting.cm-formatting-link {
@@ -741,7 +740,7 @@ em, .cm-em {
 
 .cm-formatting.cm-formatting-link:nth-child(4), .cm-link {
   font-family: "Inconsolata", monospace !important;
-  padding-right: 0.3em !important;
+  font-decoration: none;
   font-weight: 900;
 }
 
@@ -861,4 +860,18 @@ s, .cm-strikethrough {
 
 .workspace-leaf-content[data-type="outline"].view-content {
   background-color: #242424 !important;
+}
+
+.cm-formatting-link {
+  color: #3c3b3a !important;
+  font-weight: 400;
+}
+
+.cm-formatting-link.cm-link {
+  color: #3c3b3a !important;
+  font-weight: 400;
+}
+
+.cm-link {
+  display: inline !important;
 }
