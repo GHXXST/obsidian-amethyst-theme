@@ -671,7 +671,7 @@ ul ul::before {
 .cm-inline-code {
   font-family: "Inconsolata", monospace !important;
   background-color: rgba(0,0,0,0.3) !important;
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .cm-formatting-code {
