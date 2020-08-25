@@ -167,6 +167,7 @@ mark, .cm-highlight {
   color: #6C7CFE;
   font-size: 1em;
   line-height: 1.1em;
+  font-weight: 400;
 }
 
 .nav-action-button.is-active {
@@ -546,25 +547,27 @@ h6, .cm-header-6 {
 }
 
 /* Coloring the list bullets/numbers */
+
 .cm-s-obsidian span.cm-formatting-list {
   font-family: "Inconsolata", monospace !important;
-  color: #6C7CFE;
+  color: #c46a5b;
   font-size: 0.85em;
-  font-weight: 500;
+  font-weight: 900;
 }
 
- ul {
+
+ul {
   list-style: none; /* Remove default bullets */
 }
 
 ul li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #6C7CFE;
+  content: "\2022";
+  color: #c46a5b;
   font-size: 1.4em;
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em; 
 }
 
 /* Bullet point relationship lines */
@@ -607,10 +610,11 @@ ul ul::before {
 */
 
 
+
+
 /* Block cursor */
 .CodeMirror-cursor { 
-  display: inline-block !important;
-  border-left-width: 0.2em !important;
+  border-left-width: 3px !important;
   border-color: #E92EFF !important;
 }
 
@@ -718,8 +722,8 @@ ul ul::before {
 
 .internal-link, .cm-link {
   font-family: "Inconsolata", monospace !important;
-  color: #23A3EC !important;
   text-decoration: none !important;
+  color: #23A3EC !important;
 }
 
 .cm-formatting.cm-formatting-link {
@@ -913,4 +917,28 @@ s, .cm-strikethrough {
 
 .markdown-preview-section {
   line-height: 1.3em;
+}
+
+
+
+.CodeMirror-gutter-wrapper {
+  position: absolute;
+  margin-top: 1.1em !important;
+}
+
+.markdown-preview-sizer {
+  margin: 0 0.9em 0 0.9em !important;
+}
+
+.markdown-preview-sizer hr {
+  margin: -0.2em 0 0 0 !important;
+}
+
+.markdown-source-view {
+  margin: 1em 0 0 0 !important;
+}
+
+.obsidian-search-match-highlight {
+  background-color: #FFFF00 !important;
+  color: #000000 !important;
 }
