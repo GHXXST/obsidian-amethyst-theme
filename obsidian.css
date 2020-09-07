@@ -7,7 +7,7 @@
   --background-nav-alt: #121212;
   --background-nav: #161616;
   --nav-highlight: #2a2a2a;
-  --text-selection: #868687;
+  --text-selection: #5981b1;
   --text-accent: #6C7CFE;
   --text-accent-hover: #99A4FE;
   --text-normal: #d4d3cc;
@@ -764,7 +764,7 @@ strong, .cm-strong {
 
 em, .cm-em {
   font-family: "Inconsolata", monospace !important;
-  color: #17D1CF !important;
+  color: #F15EFF !important;
 }
 
 .cm-formatting.cm-formatting-link:nth-child(4), .cm-link {
