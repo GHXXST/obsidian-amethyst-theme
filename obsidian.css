@@ -15,7 +15,7 @@
   --text-faint: #575757;
   --text-error: #ff3333;
   --text-error-hover: #990000;
-  --text-highlight-bg: #6C7CFE;
+  --text-highlight-bg: #F15EFF;
   --text-on-accent: #161616;
   --interactive-normal: #2c2c2c;
   --interactive-hover: #2c2c2c;
@@ -128,7 +128,7 @@ mark, .cm-highlight {
   font-family: "Inconsolata", monospace !important;
   display: inline-block;
   font-weight: 400;
-  color: #edecec !important;
+  color: #1E1E1E !important;
   padding-left: 0.25em;
   padding-right: 0.25em;
   margin-left: -0.12em;
@@ -712,6 +712,7 @@ ul ul::before {
   /* font-weight: 500; */
 }
 
+
 /* Change link style */
 .cm-link.cm-hmd-barelink,
 .cm-tag.cm-bracket.cm-hmd-html-begin,
@@ -942,4 +943,8 @@ s, .cm-strikethrough {
 .obsidian-search-match-highlight {
   background-color: #FFFF00 !important;
   color: #000000 !important;
+}
+
+.top-titlebar-inner {
+  color: #868687 !important;
 }
