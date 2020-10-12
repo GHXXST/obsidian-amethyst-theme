@@ -157,10 +157,14 @@ mark, .cm-highlight {
 
 
 /* Style search results */
+.side-dock-collapsible-section-header {
+  color: #575757;
+}
+
 .side-dock-collapsible-section-header.list-item {
   color: #575757;
-  font-size: 0.85em;
-  margin-top: 0.6em;
+  font-size: 0.85em !important;
+  margin-top: 0.6em !important;
 }
 
 
@@ -252,7 +256,7 @@ mark, .cm-highlight {
 .search-input, .search-result, .search-result-file-match {
   font-family: "Inconsolata", monospace !important;
   display: block !important;
-  line-height: 1.3em !important;
+  /*line-height: 1.3em !important;*/
 }
 
 /* Style nav folder titles */
@@ -861,13 +865,28 @@ s, .cm-strikethrough {
   line-height: 1.2em !important;
 }
 
+.search-result-file-match {
+  padding: 0em;
+  margin: 0em;
+  line-height: 1.3em;
+  color: #d4d3cc;
+}
+
+.search-result-file-title.pane-list-item {
+  color: #575757;
+  font-weight: 900;
+  line-height: 1.3em;
+  padding-bottom: 0.2em;
+}
+
+
 /* Backlink highlighted [[links]] */
 .search-result-file-matched-text {
   font-family: "Inconsolata", monospace !important;
   color: var(--text-nav-selected);
   background-color: var(--nav-highlight);
-  padding: 2px;
-  border-radius: 4px;
+  /*padding: 2px;*/
+  /*border-radius: 4px;*/
 }
 
 /* Monospace font in editor */
@@ -945,6 +964,10 @@ s, .cm-strikethrough {
   color: #000000 !important;
 }
 
-.top-titlebar-inner {
-  color: #868687 !important;
+.titlebar-button-container {
+  color: #d4d3cc !important;
+}
+
+body > div.app-container.is-left-sidedock-collapsed.is-right-sidedock-collapsed > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-right-split > div.workspace-tabs > div.workspace-leaf > div > div.view-content > div.backlink-pane > div:nth-child(3) > div > div.search-result > div.search-result-file-title.pane-list-item > span:nth-child(2) {
+  color: #d4d3cc !important;
 }
