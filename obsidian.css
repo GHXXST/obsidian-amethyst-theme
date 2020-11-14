@@ -127,8 +127,8 @@ span.cm-formatting-code-block.cm-hmd-codeblock {
 mark, .cm-highlight {
   font-family: "Inconsolata", monospace !important;
   display: inline-block;
-  font-weight: 400;
-  color: #1E1E1E !important;
+  font-weight: 900;
+  color: #58007e !important;
   padding-left: 0.25em;
   padding-right: 0.25em;
   margin-left: -0.12em;
@@ -773,7 +773,7 @@ strong, .cm-strong {
 
 em, .cm-em {
   font-family: "Inconsolata", monospace !important;
-  color: #F15EFF !important;
+  color: #21c4a1 !important;
 }
 
 .cm-formatting.cm-formatting-link:nth-child(4), .cm-link {
